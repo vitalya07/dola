@@ -1,24 +1,43 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   const menuItems = document.querySelectorAll('.header__nav-item--has-submenu');
+document.addEventListener("DOMContentLoaded", () => {
+  //Показ и скрытие картинки
 
-//   menuItems.forEach(item => {
-//     const link = item.querySelector('a');
+const img1 = document.querySelector('.hero__images-img-1');
+const img2 = document.querySelector('.hero__images-img-2');
 
-//     link.addEventListener('click', e => {
-//       e.preventDefault(); // чтобы ссылка не срабатывала
-//       // Закрыть все остальные открытые меню
-//       menuItems.forEach(i => {
-//         if (i !== item) i.classList.remove('is-open');
-//       });
-//       // Открыть/закрыть текущее
-//       item.classList.toggle('is-open');
-//     });
-//   });
+function toggleImages() {
+  if (img1.classList.contains('show-img')) {
+    img1.classList.remove('show-img');
+    img1.classList.add('hide-img');
 
-//   // Закрыть меню при клике вне
-//   document.addEventListener('click', e => {
-//     if (![...menuItems].some(item => item.contains(e.target))) {
-//       menuItems.forEach(item => item.classList.remove('is-open'));
-//     }
-//   });
-// });
+    img2.classList.remove('hide-img');
+    img2.classList.add('show-img');
+  } else {
+    img2.classList.remove('show-img');
+    img2.classList.add('hide-img');
+
+    img1.classList.remove('hide-img');
+    img1.classList.add('show-img');
+  }
+}
+setInterval(toggleImages, 3000);
+    //Показ и скрытие шапки
+    const header = document.querySelector('.header');
+    const headerTopbar = document.querySelector('.header__top-bar');
+    function hideHeader() {
+            if(window.scrollY >= 200) {
+                headerTopbar.classList.add('hide-top-header');
+                } else {
+                    headerTopbar.classList.remove('hide-top-header');
+                }
+            } if(window.scrollY >= 202) {
+                headerTopbar.style.display = 'none'
+                // headerTopbar.classList.add('hide')
+            } else {
+                headerTopbar.classList.remove('hide')
+            }
+            window.addEventListener('scroll', ()=> {
+                hideHeader();
+            }
+        );
+        
+});

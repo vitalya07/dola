@@ -1,5 +1,8 @@
 .header {
+    width: 100%;
+    position: fixed;
     padding: 16px 0;
+    background-color: $colorBg;   
     &__top {
         &-bar {
             display: flex;
@@ -7,6 +10,9 @@
             justify-content: end;
             gap: 8px;
             margin-bottom: 26px;
+            width: 100%;
+            background-color: $colorBg;   
+            // transition: all .2s ease;
             & > p {
                 @include fontRegular;
                 line-height: 20px;
@@ -30,7 +36,7 @@
     }
     &__wrapper {
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: space-between;
         &-left {
             display: flex;
@@ -99,8 +105,8 @@
         &-sublist {
             position: absolute;
             top: 30px;
-            width: 250px;
-            padding: 24px 36px;
+            width: 280px;
+            padding: 24px 20px;
             display: none;
             background-color: $colorWhite;
             border-radius: 20px;
@@ -151,13 +157,53 @@
                 background-repeat: no-repeat;
                 background-size: 20px;
             }
-            &--book {
+            &--books {
                 background: url('/assets/icons/book-open-01-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--VIP {
+                background: url('/assets/icons/trophy-02-1.webp');
                 background-repeat: no-repeat;
                 background-size: 20px;
             }
             &--love {
                 background: url('/assets/icons/book-open-01-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--founder {
+                background: url('/assets/icons/microphone-02.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--events {
+                background: url('/assets/icons/calendar.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--partner {
+                background: url('/assets/icons/file.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--quarterly {
+                background: url('/assets/icons/calc.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--university {
+                background: url('/assets/icons/graduation-hat-02-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--about {
+                background: url('/assets/icons/building-line-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--careers {
+                background: url('/assets/icons/briefcase-01.webp');
                 background-repeat: no-repeat;
                 background-size: 20px;
             }
