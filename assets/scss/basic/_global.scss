@@ -1,4 +1,15 @@
 .body__container {
     width: 100%;
     box-sizing: border-box;
+    background-color: $colorBg;
+}
+.container {
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.custom-logo {
+    display: block;
+    width: 145px;
+    height: 41px;
 }

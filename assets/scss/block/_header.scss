@@ -1,0 +1,198 @@
+.header {
+    padding: 16px 0;
+    &__top {
+        &-bar {
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            gap: 8px;
+            margin-bottom: 26px;
+            & > p {
+                @include fontRegular;
+                line-height: 20px;
+                font-size: 12px;
+                color: $colorBlack;
+            }
+            & > a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                @include fontMedium;
+                font-size: 14px;
+                line-height: 16px;
+                color: $colorBlack;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }        
+    }
+    &__nav {
+        &-item {
+            position: relative;
+            padding: 0 0 10px 0;
+            & > a {
+                @include fontMedium;
+                font-size: 16px;
+                line-height: 120%;
+                color: $colorBlack;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $colorBlack;
+                transform: scale(0);
+                transition: all .2s ease;
+            }
+            &-has--submenu {
+                &:hover {
+                    .header__nav-item__chevron {
+                        transform: rotate(180deg);
+                        right: -22px;
+                    }
+                    .header__nav-sublist {
+                        display: block;
+                    }                   
+                }
+            }
+            &--no-menu {
+                &:hover {
+                    &::before {
+                        transform: scale(1);
+                    }                
+                }
+            }       
+            &__chevron {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url('/assets/icons/chevron-down-alt.svg');
+                transition-duration: .2s;
+                position: absolute;     
+                top: 23%;         
+                transform: translateY(-50%); 
+            }    
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 10px;
+        }  
+        &-sublist {
+            position: absolute;
+            top: 30px;
+            width: 250px;
+            padding: 24px 36px;
+            display: none;
+            background-color: $colorWhite;
+            border-radius: 20px;
+        }  
+        &-subitem {
+            position: relative;  
+            padding-left: 36px;   
+            margin-bottom: 20px;    
+            & > a {
+                @include fontMedium;
+                font-size: 16px;
+                line-height: 120%;
+                color: $colorBlack;
+                
+            }
+            &--ai {
+                background: url('/assets/icons/ai-icon.webp');  
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--formation {
+                background: url('/assets/icons/rocket-02.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;                
+            }
+            &--bookkeeping {
+                background: url('/assets/icons/pie-chart-01-2.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;                
+            }
+            &--taxes {
+                background: url('/assets/icons/percent-01.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;                
+            }
+            &--analytics {
+                background: url('/assets/icons/star-06.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;                
+            }
+            &--blog {
+                background: url('/assets/icons/feather-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--docs {
+                background: url('/assets/icons/file-minus-03.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--book {
+                background: url('/assets/icons/book-open-01-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+            &--love {
+                background: url('/assets/icons/book-open-01-1.webp');
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+        }  
+    }
+    &__questions {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 8px;
+        &-text {
+            @include fontMedium;
+            font-size: 14px;
+            line-height: 120%;
+            color: $colorBlack;
+        }
+        &-link {
+            display: flex;
+            padding: 16px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 24px;
+            background-color: $colorWhite;
+            color: $colorBlack;
+            text-align: center;
+            font-size: 14px;
+            @include fontMedium;
+            line-height: 16px;
+            cursor: pointer;
+            transition: all .2s ease;
+            &:hover {
+                background-color: $colorGrey2;                
+                transform: scale(1.03);
+            }
+        }
+    }
+}
