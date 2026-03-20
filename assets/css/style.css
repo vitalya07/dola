@@ -294,7 +294,7 @@ img {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url("/assets/icons/chevron-down-alt.svg");
+  background: url("../icons/chevron-down-alt.svg");
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   position: absolute;
