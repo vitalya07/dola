@@ -3,6 +3,7 @@
     position: fixed;
     padding: 16px 0;
     background-color: $colorBg;   
+    z-index: 30;
     &__top {
         &-bar {
             display: flex;

@@ -46,7 +46,41 @@
     font-size: 16px;
     line-height: 24px;
 }
-
+.btn {    
+    background-color: $colorBlack;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px 16px 24px;
+    width: 100%;
+    max-width: 220px;
+    gap: 8px;
+    border-radius: 24px;         
+    transition: all .2s ease; 
+    &__white {
+        background-color: $colorWhite
+    }
+    &-text {
+        @include fontMedium;
+        font-size: 14px;
+        line-height: 16px;
+        color: $colorWhite;
+        &-white {
+            color: $colorBlack;
+        }
+    }
+    &-img {
+        width: 16px;
+        height: 16px;
+    }
+    &:hover {
+        transform: scale(1.03);
+        gap: 12px;
+    }
+}
 
 
 

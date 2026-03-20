@@ -1,0 +1,44 @@
+.joining {
+    padding-bottom: 108px;
+    &__title {
+        @include fontBold;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: left;
+        color: $colorBlack;
+        margin-bottom: 16px;
+    }
+    &__descr {
+        @include fontRegular;
+        font-size: 14px;
+        line-height: 24px;
+        color: $colorBlack;
+        margin-bottom: 16px;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 16px;
+    }
+    &__button {
+        position: static;
+    }
+    &__wrapper {
+        padding: 0 80px;
+        background-color: $colorYellow2;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 492px;
+        width: 50%;
+    }
+    &__img {
+        width: 50%;
+        max-width: 492px;
+        height: auto;
+    }
+}

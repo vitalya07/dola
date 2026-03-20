@@ -1,0 +1,42 @@
+.perks {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $colorWhite2;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: .5em;
+        margin-bottom: 24px;
+        &-logo {
+            width: 64px;
+            height: 20px;
+        }
+        &-title {
+            margin-bottom: 0;
+        }
+    }
+    &__subtitle {
+        max-width: 596px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    &__descr {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    &__btn {
+        position: static;
+    }
+    &__img {
+        width: 50%;
+        max-width: 595px;
+        height: auto;
+    }
+}

@@ -2,11 +2,14 @@
 @import 'fonts';
 @import 'mixins';
 @import 'normalize';
-
+@import 'global';
 
 @import '../block/header';
 @import '../block/hero';
 @import '../block/resources';
 @import '../block/overview';
+@import '../block/perks';
+@import '../block/faqs';
+@import '../block/joining';
+@import '../block/footer';
 
-@import 'global';
