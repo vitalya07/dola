@@ -571,6 +571,89 @@ img {
   gap: 12px;
 }
 
+.overview {
+  padding-bottom: 118px;
+}
+.overview__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.overview__item {
+  width: 100%;
+  max-width: 376px;
+  height: 574px;
+  background-color: #f6f6f6;
+  border-radius: 24px;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.overview__item-img {
+  width: 376px;
+  height: 250px;
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+.overview__item-img > img {
+  border-radius: 24px;
+}
+.overview__item-box {
+  padding: 0 32px 32px 32px;
+}
+.overview__item-title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.overview__item-descr {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+.overview__item-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px 24px;
+  gap: 8px;
+  border-radius: 24px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #000;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  cursor: pointer;
+}
+.overview__item:hover .overview__item-btn {
+  background-color: #d3d3d3;
+}
+
 .body__container {
   overflow: hidden;
   width: 100%;
@@ -628,7 +711,7 @@ img {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  color: #545454;
+  color: #aeaeae;
   font-size: 16px;
   line-height: 24px;
 }
