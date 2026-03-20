@@ -1,3 +1,181 @@
 .products {
     padding: 118px 0;
+    padding-bottom: 0;
+    &__horizontal {        
+        &-head {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        &-item {
+            width: 100%;
+            max-width: 600px;
+            height: 200px;
+            position: relative;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            padding: 32px 0 0 40px;
+            border-radius: 32px;
+            overflow: hidden;
+            
+            &--img {
+                width: 250px;
+                height: 157px;
+            }
+            transition: all .4s ease; 
+            &:hover {
+                transform: scale(1.02);
+            
+            }
+        }
+    }
+    &__content {
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__item {
+        width: 100%;
+        max-width: 392px;
+        height: 380px;
+        padding: 40px 40px 0 40px;
+        border-radius: 32px;
+        transition: all .4s ease; 
+        position: relative;
+        &:hover {
+            transform: scale(1.02);
+        }
+        &-head {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+            margin-bottom: 16px;
+            &--text {
+                @include fontMedium;
+                font-size: 14px;
+                line-height: 16px;
+                color: $colorText2;
+            }
+        }
+        &-title {
+            margin-bottom: 16px;
+            @include fontBold;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &-link {
+            display: block;
+            @include fontMedium;
+            width: 100%;
+            max-width: 170px;            
+            font-size: 16px;
+            line-height: 20px;
+            color: $colorBlack;
+            position: relative;
+            margin-bottom: 32px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-image: url('../icons/chevron-right-alt-black.svg');
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+        }
+        &-img {
+            width: 312px;
+            height: 172px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+    &__box {
+        &-head {
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 795px;
+        border-bottom: 1px solid $colorGray8;
+        &-btn {
+            padding: 16px;
+            @include fontMedium;
+            font-size: 16px;
+            line-height: 20px;
+            color: $colorGray;
+            cursor: pointer;
+        }
+    }
+    &__links {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 16px;
+        &-link {        
+            position: static;                       
+        }
+        &-btn {
+            display: inline-block;
+            position: static;
+            transition: all .4s ease;
+            &:hover {
+                background-color: $colorGray5;
+            }
+        }
+    }
+}
+.yellow {
+    background-color: $colorBg;
+}
+.blue {
+    background-color: $colorBlue;
+}
+.green {
+    background-color: $colorGreen;
+}
+.green2 {
+    background-color: $colorGreen2;
+}
+.pink {
+    background-color: $colorPink2;
+}
+.text-blue {
+    color: $colorBlue2;
+}
+.text-green {
+    color: $colorGreen3;
+}
+.text-green2 {
+    color: $colorGreen4;
+}
+.text-pink {
+    color: $colorPink;
+}
+.tab-active {
+    color: $colorBlack;
+    border-bottom: 2px solid $colorBlack;
 }
