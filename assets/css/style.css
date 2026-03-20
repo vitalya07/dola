@@ -965,6 +965,12 @@ img {
   color: #6b6b6b;
   cursor: pointer;
 }
+.products__buttons-btn:focus {
+  outline: none;
+}
+.products__buttons-btn:active {
+  outline: none;
+}
 .products__links {
   width: 50%;
   display: -webkit-box;
@@ -989,6 +995,258 @@ img {
 }
 .products__links-btn:hover {
   background-color: #d3d3d3;
+}
+.products__formations-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+.products__formations-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.products__formations-item {
+  background-color: #fef4cc;
+  padding: 40px 40px 50px 40px;
+  border-radius: 32px;
+}
+.products__formations-item--second {
+  max-width: 358px;
+  padding: 40px 40px 37px 40px;
+}
+.products__formations-item--three {
+  max-width: 357px;
+  padding-bottom: 90px;
+}
+.products__formations-item--title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #957800;
+  margin-bottom: 16px;
+}
+.products__formations-item--subtitle {
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  max-width: 396px;
+}
+.products__formations-item--descr {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  max-width: 396px;
+  margin-bottom: 56px;
+}
+.products__formations-item--descr--second {
+  margin-bottom: 26px;
+}
+.products__formations-item--descr--three {
+  margin-bottom: 35px;
+}
+.products__formations-item--img {
+  width: 396px;
+  height: auto;
+}
+.products__formations-item--img--second {
+  width: 183px;
+  height: auto;
+  margin-left: 30%;
+}
+.products__formations-item--img--three {
+  width: 278px;
+  height: auto;
+}
+.products__formations-window {
+  border: 1px solid #957800;
+  padding: 32px 40px;
+  border-radius: 32px;
+  max-width: 358px;
+}
+.products__bookkeeping-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.products__bookkeeping-item {
+  width: 560px;
+  height: 595px;
+  background-color: #eef3fe;
+  padding: 40px 40px 0 40px;
+  border-radius: 32px;
+  position: relative;
+}
+.products__bookkeeping-item--title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #276EF1;
+  margin-bottom: 16px;
+}
+.products__bookkeeping-item--subtitle {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  margin-bottom: 16px;
+}
+.products__bookkeeping-item--descr {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  max-width: 396px;
+  margin-bottom: 56px;
+}
+.products__bookkeeping-item--img {
+  width: 480px;
+  height: 354px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.products__bookkeeping-item--img--right {
+  width: 234px;
+  height: 147px;
+  left: 80%;
+  bottom: 34px;
+}
+.products__bookkeeping-item--right {
+  width: 639px;
+  height: 408px;
+  margin-top: 16px;
+}
+.products__bookkeeping-window {
+  border: 1px solid #276EF1;
+  padding: 40px 40px 32px 40px;
+  border-radius: 32px;
+  width: 639px;
+  height: 170px;
+}
+.products__taxes-item {
+  width: 720px;
+  height: 606px;
+}
+.products__taxes-item--img {
+  width: 640px;
+  height: 365px;
+}
+.products__taxes-item--img--right {
+  width: 174px;
+  height: 152px;
+}
+.products__taxes-item--right {
+  width: 487px;
+  height: 419px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.products__taxes-window {
+  margin-bottom: 0;
+  width: 487px;
+  height: 170px;
+}
+.products__analytics-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+.products__analytics-item {
+  padding: 40px 40px 50px 40px;
+  border-radius: 32px;
+  background-color: #ffeef2;
+  position: relative;
+  width: 600px;
+  height: 605px;
+}
+.products__analytics-item--title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #957800;
+  margin-bottom: 16px;
+}
+.products__analytics-item--subtitle {
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+}
+.products__analytics-item--descr {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+.products__analytics-item--img {
+  width: 520px;
+  height: 364px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+.products__analytics-item--imgs {
+  margin-bottom: 40px;
 }
 
 .yellow {
@@ -1027,9 +1285,21 @@ img {
   color: #996773;
 }
 
+.border-green {
+  border: 1px solid #0D792C;
+}
+
 .tab-active {
   color: #000;
   border-bottom: 2px solid #000;
+}
+
+.tab-content-hide {
+  display: none;
+}
+
+.tab-content-active {
+  display: block;
 }
 
 .perks {

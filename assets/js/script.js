@@ -59,5 +59,31 @@ setInterval(toggleImages, 3000);
       faqsBtnText.innerHTML = `Show less`
       faqsBtnImg.style.transform = `rotate(270deg)`
     }
-  })      
+  });
+  //Табы
+  const tabs = document.querySelectorAll('.products__buttons-btn');
+const contents = document.querySelectorAll('.products__box-tab');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
+
+        // убираем актив у кнопок
+        tabs.forEach(t => t.classList.remove('tab-active'));
+        tab.classList.add('tab-active');
+
+        // скрываем контент
+        contents.forEach(content => {
+            content.classList.remove('tab-content-active');
+            content.classList.add('tab-content-hide');
+
+            if (content.dataset.content === target) {
+                content.classList.remove('tab-content-hide');
+                content.classList.add('tab-content-active');
+            }
+        });
+    });
+});
+
+  
 });
