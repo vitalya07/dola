@@ -1,0 +1,180 @@
+.testimonials {
+    padding: 120px 0;
+    &__container {
+        width: 100%;
+        overflow: hidden;
+    }
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        &-item {
+            width: 100%;
+            max-width: 936px;
+            height: 580px;
+            padding: 40px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &--img {
+                width: 400px;
+                height: 500px;
+                position: relative;
+                border-radius: 32px;
+                & > video {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &--logo {
+                position: absolute;
+                top: 32px;
+                left: 32px;
+                width: 125px;
+                height: auto;
+            }
+        }
+        &-info {
+           width: 394px;
+            &--img {
+                margin-bottom: 46px;
+            }
+            &--title {
+                @include fontBold;
+                font-size: 24px;
+                line-height: 32px;
+                color: $colorBlack;
+                margin-bottom: 43px;
+            }
+            &--name {
+                @include fontBold;
+                font-size: 18px;
+                line-height: 24px;
+                color: $colorBlack;
+                margin-bottom: 6px;
+            }
+            &--post {
+                @include fontMedium;
+                font-size: 16px;
+                line-height: 20px;
+                color: $colorGray6;               
+                & > a {
+                     @include fontMedium;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $colorTurquoise;
+                }
+                &__2 {
+                    @include fontMedium;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $colorGray6;
+                    & > a {
+                        @include fontMedium;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $colorBrown;
+                    }
+                }
+                &__3 {
+                    @include fontMedium;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $colorGray6;
+                    & > a {
+                        @include fontMedium;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $colorOrange;
+                    }
+                }
+            }
+        }
+    }
+}
+.blue {
+    background-color: $colorBlue;
+}
+.brown {
+    background-color: $colorBrown2;
+}
+.peach {
+    background-color: $colorPeach;
+}
+.img-black {
+    background-color: $colorBlack;
+}
+.img-brown {
+    background-color: $colorBrown3;
+}
+.img-orange {
+    background-color: $colorOrange2;
+}
+.testimonials-hide {
+    transition: all .6s ease;
+    position: relative;
+    width: 120px;
+    border-radius: 32px;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000060;
+        z-index: 20;
+    }
+    .testimonials__tabs-item--adam {
+        display: block;
+        width: 120px;
+        background-color: $colorTurquoise;
+    }
+    .testimonials__tabs-item--img {
+        width: 232px;
+        height: 580px;
+        & > video {
+            display: none;
+        }
+    }
+    .testimonials__tabs-item--logo {
+        display: none;
+    }
+    .testimonials__tabs-info {
+        display: none;
+    }
+}
+.testimonials-show {
+    transition: all .6s ease;
+    width: 100%;
+    max-width: 936px;
+    height: 580px;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::before {
+        display: none;
+    }
+    .testimonials__tabs-item--adam {
+        display: none
+    }
+    .testimonials__tabs-item--img {
+        width: 400px;
+        height: 500px;
+        position: relative;
+    }
+    .testimonials__tabs-item--logo {
+        display: block;
+    }
+    .testimonials__tabs-info {
+        display: block;
+    }
+}
