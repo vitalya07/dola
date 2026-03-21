@@ -2055,6 +2055,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
   .hamburger {
     display: block;
   }
@@ -2063,5 +2066,27 @@ img {
   }
   .header__questions {
     display: none;
+  }
+  .hero__info {
+    max-width: 441px;
+  }
+  .hero__images {
+    max-width: 600px;
+  }
+  .hero__images-img {
+    width: 100%;
+    max-width: 600px;
+  }
+  .products__buttons-btn {
+    padding: 10px;
+  }
+  .products__content-wrapper {
+    gap: 10px;
+  }
+  .products__content-item {
+    max-width: 360px;
+  }
+  .products__horizontal-item {
+    max-width: 550px;
   }
 }/*# sourceMappingURL=style.css.map */

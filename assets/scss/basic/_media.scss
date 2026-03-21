@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    .container {
+        padding: 0 10px
+    }
     .hamburger {
         display: block;
     }
@@ -8,6 +11,38 @@
         }
         &__questions {
             display: none;
+        }
+    }
+    .hero {
+        &__info {
+            max-width: 441px;
+        }
+        &__images {
+            max-width: 600px;
+            &-img {
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+    }
+    .products {
+        &__buttons {
+            &-btn {
+                padding: 10px;
+            }
+        }
+        &__content {
+            &-wrapper {
+                gap: 10px;
+            }
+            &-item {
+                max-width: 360px;
+            }
+        }
+        &__horizontal {
+            &-item {
+                max-width: 550px;
+            }
         }
     }
 }
