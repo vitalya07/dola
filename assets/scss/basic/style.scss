@@ -5,6 +5,8 @@
 @import 'global';
 
 @import '../block/header';
+@import '../block/mobile-menu';
+@import '../block/hamburger';
 @import '../block/hero';
 @import '../block/resources';
 @import '../block/overview';
@@ -15,3 +17,4 @@
 @import '../block/joining';
 @import '../block/footer';
 
+@import 'media';

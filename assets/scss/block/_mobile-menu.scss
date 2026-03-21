@@ -1,0 +1,68 @@
+.mobile-menu {
+    position: absolute;
+    top: -500%;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: $colorBg;
+    z-index: 40;
+    padding:140px 70px;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: all .2s ease;
+    &-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &-item {
+            position: relative;
+            padding: 0 0 10px 0;
+            width: 100%;
+            margin-bottom: 15px;
+            & > a {
+                display: block;
+                @include fontMedium;
+                font-size: 16px;
+                line-height: 120%;
+                color: $colorBlack;
+                margin-bottom: 15px;
+            }
+            &--chevron {
+                position: absolute;
+                top: 0;
+                right: 30px;
+                width: 16px;
+                height: 16px;
+                background: url('../icons/chevron-right-alt-black.svg');
+                transform: rotate(90deg);
+                transition: all .4s ease;
+            }
+        }
+    }
+    &-sublist {
+        display: none;
+        &--item {
+            padding-left: 40px;
+            margin-bottom: 10px;
+            
+            & > a {
+                @include fontMedium;
+                font-size: 16px;
+                line-height: 120%;
+                color: $colorBlack;
+            }
+        }
+    }
+    .mobile-menu-open {
+        .mobile-menu-sublist {
+            display: block;
+        }
+        .mobile-menu-list-item--chevron {
+            transform: rotate(270deg);
+        }
+    }
+    &-show {
+        top: 0;        
+    }
+}
+

@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+    .hamburger {
+        display: block;
+    }
+    .header {
+        &__nav {
+            display: none;
+        }
+        &__questions {
+            display: none;
+        }
+    }
+}

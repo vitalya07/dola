@@ -87,8 +87,6 @@ setInterval(toggleImages, 3000);
     
     const testimonialsTabs = document.querySelectorAll('.testimonials__tabs-item');
     if (!testimonialsTabs.length) return;
-
-    // Устанавливаем первый элемент как show, остальные hide
     testimonialsTabs.forEach((tab, index) => {
         if (index === 0) {
             tab.classList.add('testimonials-show');
@@ -104,24 +102,29 @@ setInterval(toggleImages, 3000);
             });
             tab.classList.add('testimonials-show');
             tab.classList.remove('testimonials-hide');
-
-            // Сброс автопереключения, чтобы не дергало сразу после клика
             currentIndex = Array.from(testimonialsTabs).indexOf(tab);
         });
     });
     let currentIndex = 0;
     setInterval(() => {
-        // Скрываем текущий
         testimonialsTabs[currentIndex].classList.remove('testimonials-show');
         testimonialsTabs[currentIndex].classList.add('testimonials-hide');
-
-        // Считаем следующий по порядку
         currentIndex = (currentIndex + 1) % testimonialsTabs.length;
-
-        // Показываем следующий
         testimonialsTabs[currentIndex].classList.add('testimonials-show');
         testimonialsTabs[currentIndex].classList.remove('testimonials-hide');
     }, 8000);
-    
-  
+  //Раскрытие и скрытие мобильнеого меню
+    const mobileMenuSublist = document.querySelectorAll('.mobile-menu-list-item');
+    mobileMenuSublist.forEach (item => {
+      item.addEventListener('click', ()=> {
+        item.classList.toggle('mobile-menu-open')
+      })
+    });
+   //Открытие гамбургера
+   const hamburger = document.querySelector('.hamburger');
+   const mobileMenu = document.querySelector('.mobile-menu');
+   hamburger.addEventListener('click', ()=> {
+    mobileMenu.classList.toggle('mobile-menu-show');
+    hamburger.classList.toggle('hamburger-open')
+   }) 
 });
