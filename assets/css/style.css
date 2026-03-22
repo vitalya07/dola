@@ -2089,4 +2089,57 @@ img {
   .products__horizontal-item {
     max-width: 550px;
   }
+  .testimonials-show {
+    max-width: 860px;
+  }
+  .testimonials-hide {
+    max-width: 113px;
+  }
+  .footer__head {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .products__buttons {
+    border-bottom: none;
+  }
+  .products__box-head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .products__box-links {
+    display: none;
+  }
+  .products__content-item {
+    max-width: 314px;
+  }
+  .products__item-img {
+    width: 234px;
+    height: 129px;
+  }
+  .products__horizontal-item {
+    max-width: 475px;
+  }
+  .overview__item {
+    max-width: 298px;
+  }
+  .overview__item-img {
+    width: 100%;
+    height: auto;
+  }
+  .perks__info {
+    width: 40%;
+  }
+  .testimonials-show {
+    max-width: 755px;
+  }
+  .testimonials-hide {
+    max-width: 94px;
+  }
+  .footer__head {
+    max-width: 900px;
+  }
 }/*# sourceMappingURL=style.css.map */

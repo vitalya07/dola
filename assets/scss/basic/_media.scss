@@ -45,4 +45,80 @@
             }
         }
     }
+    .testimonials {
+        &-show {
+            max-width: 860px;
+        }
+        &-hide {
+            max-width: 113px;
+        }
+    }
+    .footer {
+        &__head {
+            max-width: 1000px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .products {
+        &__buttons {
+            border-bottom: none;
+        }
+        &__box {
+            &-head {
+                justify-content: center;
+                width: 100%;
+                border-bottom: 1px solid $colorGray8;
+            }
+            &-links {
+                display: none;
+            }
+        }
+        &__content {
+            &-item {
+                max-width: 314px;                
+            }
+        }
+        &__item {
+            &-img {
+                width: 234px;
+                height: 129px;
+            }
+        }
+        &__horizontal {
+            &-item {
+                max-width: 475px;
+            }
+        }
+    }
+    .overview {
+        &__item {
+            max-width: 298px;
+            &-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .perks {
+        &__info {
+            width: 40%;
+        }
+    }
+    .testimonials {
+        &-show {
+            max-width: 755px;
+        }
+        &-hide {
+            max-width: 94px;
+        }
+    }
+    .footer {
+        &__head {
+            max-width: 900px;
+        }
+    }
+}
+@media (max-width:993px) {
+    
 }
